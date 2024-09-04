@@ -19,9 +19,13 @@ def backup_files(src, dst, files):
         os.makedirs(dst)
     for file_name in files:
         src_file = os.path.join(src, file_name)
+        dst_file = os.path.join(dst, file_name)
         if os.path.exists(src_file):
-            shutil.copy(src_file, dst)
-            logging.info(f"{file_name} 已备份到 {dst}")
+            if not os.path.exists(dst_file):
+                shutil.copy(src_file, dst)
+                logging.info(f"{file_name} 已备份到 {dst}")
+            else:
+                logging.info(f"{file_name} 已存在备份，跳过备份")
         else:
             logging.warning(f"{file_name} 不存在，无法备份")
 

@@ -1,7 +1,8 @@
 # Github_desktop_zh_CN_translate
 Github desktop for windows 的汉化/中文翻译
 # GitHub Desktop 汉化 中文为使用机械翻译，非人工校准！！！
-#### 此readme.md 为chatgpt生成的模板
+
+
 ## 项目简介
 
 这是一个用于汉化 [GitHub Desktop](https://desktop.github.com/) 的脚本工具。该工具可以自动备份 GitHub Desktop 的关键文件，并将汉化的文件替换到指定目录中，从而实现界面的汉化。你还可以轻松地还原到原始版本。
@@ -25,7 +26,7 @@ Github desktop for windows 的汉化/中文翻译
 ### 安装步骤
 
 1. **运行脚本**：
-    - 双击运行 `github_desktop_translate.bat` 脚本，选择相应操作即可。
+    - 双击运行 `github_desktop_translate.exe` 脚本，选择相应操作即可。
 
 ### 使用说明
 
@@ -45,10 +46,10 @@ Github desktop for windows 的汉化/中文翻译
   
 - **`translated/`**: 存放翻译后的文件 (`main.js` 和 `renderer.js`)。这些文件是汉化后的版本，当用户选择汉化选项时，脚本会将这些文件复制到 GitHub Desktop 的安装目录。
 
-- **`github_desktop_translate.bat`**: 这是主脚本文件，用于执行备份、汉化、还原和重启 GitHub Desktop 的操作。
+- **`github_desktop_translate.exe`**: 这是主程序文件，用于执行备份、汉化、还原和重启 GitHub Desktop 的操作。
 
 - **`README.md`**: 项目说明文件，提供项目简介、安装和使用说明、贡献指南等。
 
 - **`LICENSE`**: 许可证文件（如果有），用于说明项目的许可条款。你可以根据项目需求选择适当的许可证，例如 MIT License。
 
-
+- 此readme为人工智能生成的模板
